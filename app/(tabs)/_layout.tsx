@@ -26,11 +26,18 @@ export default function TabLayout() {
           backgroundColor: isDark ? Colors.darkCard : Colors.white,
           borderTopWidth: 1,
           borderTopColor: isDark ? Colors.darkBorder : Colors.border,
+          height: 85,
+          paddingBottom: 8,
+          paddingTop: 8,
         },
         tabBarLabelStyle: {
-          fontSize: 11,
+          fontSize: 14,
           fontWeight: '600' as const,
-          marginTop: 4,
+          marginTop: 6,
+          marginBottom: 4,
+        },
+        tabBarItemStyle: {
+          paddingVertical: 8,
         },
       }}
     >
@@ -39,7 +46,7 @@ export default function TabLayout() {
         options={{
           title: 'Planner',
           headerTitle: 'Workout Planner',
-          tabBarIcon: ({ color }) => <Dumbbell size={24} color={color} />,
+          tabBarIcon: ({ color }) => <Dumbbell size={32} color={color} />,
         }}
       />
       <Tabs.Screen
@@ -47,7 +54,7 @@ export default function TabLayout() {
         options={{
           title: 'Calendar',
           headerTitle: 'Workout Calendar',
-          tabBarIcon: ({ color }) => <Calendar size={24} color={color} />,
+          tabBarIcon: ({ color }) => <Calendar size={32} color={color} />,
         }}
       />
       <Tabs.Screen
@@ -55,7 +62,7 @@ export default function TabLayout() {
         options={{
           title: 'Exercises',
           headerTitle: 'Exercise Library',
-          tabBarIcon: ({ color }) => <Activity size={24} color={color} />,
+          tabBarIcon: ({ color }) => <Activity size={32} color={color} />,
         }}
       />
       <Tabs.Screen
@@ -63,7 +70,7 @@ export default function TabLayout() {
         options={{
           title: 'Calculator',
           headerTitle: 'Calorie Calculator',
-          tabBarIcon: ({ color }) => <Calculator size={24} color={color} />,
+          tabBarIcon: ({ color }) => <Calculator size={32} color={color} />,
         }}
       />
       <Tabs.Screen
@@ -71,7 +78,7 @@ export default function TabLayout() {
         options={{
           title: 'Progress',
           headerTitle: 'Progress & Stats',
-          tabBarIcon: ({ color }) => <TrendingUp size={24} color={color} />,
+          tabBarIcon: ({ color }) => <TrendingUp size={32} color={color} />,
         }}
       />
     </Tabs>
