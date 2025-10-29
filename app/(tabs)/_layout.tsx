@@ -31,7 +31,7 @@ export default function TabLayout() {
           borderTopColor: isDark ? Colors.darkBorder : Colors.border,
           height: 150,
           paddingBottom: 40,
-          paddingTop: 20,
+          paddingTop: 0,
         },
         tabBarLabelStyle: {
           fontSize: 14,
