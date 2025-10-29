@@ -17,6 +17,9 @@ export default function TabLayout() {
         headerStyle: {
           backgroundColor: isDark ? Colors.darkBackground : Colors.white,
         },
+        headerTitleContainerStyle: {
+          paddingTop: 10,
+        },
         headerTitleStyle: {
           fontWeight: '600' as const,
           fontSize: 18,
