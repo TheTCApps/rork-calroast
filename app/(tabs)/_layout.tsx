@@ -26,18 +26,19 @@ export default function TabLayout() {
           backgroundColor: isDark ? Colors.darkCard : Colors.white,
           borderTopWidth: 1,
           borderTopColor: isDark ? Colors.darkBorder : Colors.border,
-          height: 85,
-          paddingBottom: 8,
-          paddingTop: 8,
+          height: 150,
+          paddingBottom: 40,
+          paddingTop: 20,
         },
         tabBarLabelStyle: {
           fontSize: 14,
           fontWeight: '600' as const,
           marginTop: 6,
-          marginBottom: 4,
+          marginBottom: 0,
         },
         tabBarItemStyle: {
           paddingVertical: 8,
+          justifyContent: 'flex-start',
         },
       }}
     >
